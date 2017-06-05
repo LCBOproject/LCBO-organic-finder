@@ -258,7 +258,7 @@ lcboApp.initMap = function(posGeo){
     var userPin = new google.maps.Marker({
         position: posGeo,
         map: lcboApp.map,
-        icon:'../../assets/userMarker.svg',
+        icon:'./assets/userMarker.svg',
     });
 
     lcboApp.directionsDisplay = new google.maps.DirectionsRenderer({suppressMarkers : true});
@@ -378,7 +378,7 @@ lcboApp.filteredStore = function(store) {
         var lcboStore = new google.maps.Marker({
             position: pos,
             map: lcboApp.map,
-            icon:'../../assets/LCBOMarker.svg',
+            icon:'./assets/LCBOMarker.svg',
         });
 
         lcboStore.addListener('click', function() {
