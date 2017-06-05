@@ -34,7 +34,7 @@
 // get products based on userChoice beer/wine/spirits
 var lcboApp = {};
 
-lcboApp.key = "MDplNzZkOGVjYy00NjFiLTExZTctYjY1MC1mNzdhM2JhOTg3OGQ6YUVVRDRXaGZGVmZaT0ZYNHdNRjYwNG8ybGxuSE5mTno2dldF";
+lcboApp.key = "MDo5NTE0YTM2ZS00YTExLTExZTctYWRkNC1iN2Y2NDVjMjZmNWY6R29SM2NabDMyQTFHRUhMM0VRU3ZYVHpYbDhQOXN5UzByWmRa";
 
 lcboApp.browserStuff = function(){
     $('a').smoothScroll({
@@ -291,7 +291,7 @@ lcboApp.geoLocation = function(){
 
 lcboApp.getAlc = function(userChoiceBooze) {
      $.ajax({
-        url: "http://lcboapi.com/products",
+        url: "https://lcboapi.com/products",
         method: "GET",
         dataType: "json",
         data: {
@@ -347,7 +347,7 @@ lcboApp.getStoresById = function(clickedItem, lat, long){
         console.log(clickedItem);
         // let storeResults = [];
          $.ajax({
-            url: "http://lcboapi.com/stores",
+            url: "https://lcboapi.com/stores",
             method: "GET",
             dataType: "json",
             data: {
